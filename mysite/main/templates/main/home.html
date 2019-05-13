@@ -1,0 +1,17 @@
+{% extends "main/header.html" %}
+
+{% block content %}
+
+    <h1>home</h1>
+    {% for tut in tutorials %}
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">{{ tut.tutorial_content }}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
